@@ -1,12 +1,8 @@
 
-.header {
+header {
   background: pink;
 
   h1 {
     color: white;
   }
-}
-
-:global(.foo) {
-  background: green;
 }

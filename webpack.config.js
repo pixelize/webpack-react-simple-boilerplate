@@ -14,7 +14,7 @@ module.exports = {
       loader: 'babel-loader?sourceMap'
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader')
     }]
   },
   output: {
@@ -27,13 +27,8 @@ module.exports = {
   ],
   postcss: function () {
     return [
-      require('postcss-import'),
       require('autoprefixer'),
-      require('postcss-nested'),
-      function (css) {
-        css.prepend(fs.readFileSync('./src/styles/variables.css').toString('utf8'))
-      },
-      require('postcss-simple-vars')
+      require('rucksack-css')
     ]
   },
   devServer: {

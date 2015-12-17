@@ -1,9 +1,9 @@
 
 import React from 'react'
-import styles from './header.css'
+import './header.css'
 
 export default (props) => (
-  <header className={styles.header}>
-    <h1>Title</h1>
+  <header>
+    <h1>Some title</h1>
   </header>
 )
