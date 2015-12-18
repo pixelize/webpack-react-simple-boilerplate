@@ -7,15 +7,16 @@ import './main.css'
 import React, { Component } from 'react'
 import Header from './layout/header'
 import Navigation from './layout/navigation'
+import Footer from './layout/footer'
 
-export default class Main extends Component {
-  render () {
-    return (
-      <main>
-        <Header />
-        <Navigation />
-        {this.props.children}
-      </main>
-    )
-  }
-}
+const isLogged = true
+
+export default (props) => (
+  <main>
+    <Header isLogged={isLogged} />
+
+    {props.children}
+
+    <Footer />
+  </main>
+)
