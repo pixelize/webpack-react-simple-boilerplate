@@ -1,8 +1,9 @@
 
 import React from 'react'
+import '../footer/footer.scss'
 
 export default (props) => (
-  <div>
+  <footer className='site-footer'>
     Yo Footer !
-  </div>
+  </footer>
 )

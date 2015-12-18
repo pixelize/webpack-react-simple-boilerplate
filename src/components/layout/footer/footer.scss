@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Header
+   Footer
    ========================================================================== */
 
 
-/* Dependancies
+/* Dependencies
    ========================================================================== */
 
 @import '../../../styles/utils/_variables';
@@ -11,18 +11,6 @@
 
 /* Styles
    ========================================================================== */
-
-header {
-  background: #999;
-
-  .logo, .desc {
-    background: tomato;
-    lost-column: 1/2;
-  }
-
-  .logo > img { display: block; }
-
-  h1 {
-    color: white;
-  }
+.site-footer {
+  background: $color-footer;
 }

@@ -12,7 +12,7 @@
 /* Page settings
    ========================================================================== */
 
-/*box-sizing be inherited from html*/
+// Box-sizing be inherited from html
 html {
   box-sizing: border-box;
 }
@@ -24,6 +24,9 @@ html {
 /* Grid settings
    ========================================================================== */
 
+// Inline comments into css decalrations block lost-center generation
+// Double variables into lost-center does not work : 15px should be $site-padding
+
 .wrap {
-  lost-center: $site-width $grid-padding;
+  lost-center: $site-width 15px;
 }

@@ -33,7 +33,7 @@ module.exports = {
   postcss: function () {
     return [
       require('lost')({
-        gutter: '150px'
+        gutter: '20px'
       }),
       require('autoprefixer')
     ]
