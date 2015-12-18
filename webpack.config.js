@@ -27,7 +27,9 @@ module.exports = {
   ],
   postcss: function () {
     return [
-
+      require('postcss-import')({
+        root: __dirname
+      }),
       require('rucksack-css'),
       require('precss'),
       require('postcss-pxtorem')({
