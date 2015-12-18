@@ -18,26 +18,29 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Black';
+  font-family: "Avenir Black";
   font-path: 'http://localhost:3000/fonts/Avenir-Black';
   font-weight: normal;
   font-style: normal;
 }
 
-$base-font-size: 18px;
+$base-font-size: 14px;
 
 body,
 html {
+  -webkit-font-smoothing: antialiased;
+
+  font-family: 'Avenir Light', sans-serif;
   font-size: $base-font-size;
+  color: #666A82;
 }
 
-
 h1, h2 {
-  font-family: 'Avenir Black', sans-serif;
+  font-family: 'Avenir Light', sans-serif;
 }
 
 h1 {
-  font-size: $base-font-size;
+  font-size: 30px;
 }
 
 h2 {
@@ -55,7 +58,9 @@ h4 {
 }
 
 
-.text-small { font-size: 12px; }
+.text-small {
+  font-size: 12px;
+}
 
 .label {
   font-family: 'Avenir Heavy';

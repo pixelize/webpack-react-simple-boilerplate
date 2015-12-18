@@ -27,8 +27,17 @@ module.exports = {
   ],
   postcss: function () {
     return [
+
+      require('rucksack-css'),
+      require('precss'),
+      require('postcss-pxtorem')({
+        root_value: 15
+      }),
       require('autoprefixer'),
-      require('rucksack-css')
+      require("stylelint")(),
+      require("postcss-reporter")({
+        clearMessages: true
+      })
     ]
   },
   devServer: {

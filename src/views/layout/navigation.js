@@ -4,9 +4,7 @@ import { Link } from 'react-router'
 
 export default (props) => (
   <nav>
-    <ul>
-      <li><Link to='/'>Main</Link></li>
-      <li><Link to='/about'>About</Link></li>
-    </ul>
+    Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.
   </nav>
 )
