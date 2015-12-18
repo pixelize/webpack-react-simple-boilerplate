@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$color-light-lter: #FBFCFD;
+$color-light-lt:   #F5F8FA;
+$color-light:      #E8EAED;
+$color-light-dk:   #DDDFE4;
+$color-light-dker: #C6C9D2;
+
+$color-dark-lter:  #E4EAF1;
+$color-dark-lt:    #C9D6E4;
+$color-dark:       #989EAE;
+$color-dark-dk:    #63697E;
+$color-dark-dker:  #515567;
+
+$color-info:       #AEC1D6;
+$color-danger:     #F74040;
+$color-success:    #70C7AB;
+$color-warning:    #FFB850;
+
+/* Fonts
+   ========================================================================== */
+
+$base-font-size: 14px;
+
+$font-light: 'Avenir Light', sans-serif;
+$font-book: 'Avenir Book', sans-serif;
+$font-heavy: 'Avenir Heavy', sans-serif;
+$font-black: 'Avenir Black', sans-serif;

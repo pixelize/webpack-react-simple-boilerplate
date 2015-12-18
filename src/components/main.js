@@ -1,13 +1,12 @@
 
 
 // Load main styles
-import '../styles/components/typography.css'
-import './main.css'
+import '../styles/base/typography.css'
+import '../styles/main.css'
 
 import React, { Component } from 'react'
-import Header from './layout/header'
-import Navigation from './layout/navigation'
-import Footer from './layout/footer'
+import Header from './layout/header/header'
+import Footer from './layout/footer/footer'
 
 const isLogged = true
 

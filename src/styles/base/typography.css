@@ -1,0 +1,77 @@
+@import "../utils/variables.css";
+
+/* ==========================================================================
+   Typography rules
+   ========================================================================== */
+
+/* Custom fonts generation (using rucksack font-path util)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Avenir Light';
+  font-path: 'http://localhost:3000/fonts/Avenir-Light';
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Avenir Book';
+  font-path: 'http://localhost:3000/fonts/Avenir-Book';
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Avenir Heavy';
+  font-path: 'http://localhost:3000/fonts/Avenir-Heavy';
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Avenir Black";
+  font-path: 'http://localhost:3000/fonts/Avenir-Black';
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Web site general font settings
+   ========================================================================== */
+
+body,
+html {
+  /* Let's smooth all fonts ! */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  color: $color-dark-dk;
+  font-family: $font-light;
+  font-size: $base-font-size;
+}
+
+h1,
+h2
+h3,
+h4 {
+  /* Firefox <h/> tag boldness fix */
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-family: $font-light;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-family: $font-book;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: $font-heavy;;
+  font-size: $base-font-size;
+}
