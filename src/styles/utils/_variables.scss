@@ -31,3 +31,15 @@ $font-light: 'Avenir Light', sans-serif;
 $font-book: 'Avenir Book', sans-serif;
 $font-heavy: 'Avenir Heavy', sans-serif;
 $font-black: 'Avenir Black', sans-serif;
+
+/* Layout
+   ========================================================================== */
+$grid-padding: 20px;
+$site-padding: 15px;
+$site-width: 1020px + (2 * $site-padding);
+
+
+/* Grid settings
+   ========================================================================== */
+// Lost settings are currently setted in webpack.config.js
+// @lost gutter 80px;

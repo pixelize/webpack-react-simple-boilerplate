@@ -1,0 +1,29 @@
+/* ==========================================================================
+   General settings
+   ========================================================================== */
+
+/* Importing libs
+   ========================================================================== */
+
+@import "~normalize.css/normalize.css";
+@import "./utils/variables";
+@import "./base/typography";
+
+/* Page settings
+   ========================================================================== */
+
+/*box-sizing be inherited from html*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Grid settings
+   ========================================================================== */
+
+.wrap {
+  lost-center: $site-width $grid-padding;
+}

@@ -13,8 +13,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader?sourceMap'
     }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader')
+      test: /\.scss$/,
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!sass!postcss-loader')
     }]
   },
   output: {
@@ -25,21 +25,17 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css', { allChunks: true })
   ],
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, 'node_modules')
+    ]
+  },
   postcss: function () {
     return [
-      require('postcss-import')({
-        root: __dirname
+      require('lost')({
+        gutter: '150px'
       }),
-      require('rucksack-css'),
-      require('precss'),
-      require('postcss-pxtorem')({
-        root_value: 15
-      }),
-      require('autoprefixer'),
-      require("stylelint")(),
-      require("postcss-reporter")({
-        clearMessages: true
-      })
+      require('autoprefixer')
     ]
   },
   devServer: {
